@@ -20,17 +20,21 @@ main {
   top: 10px;
   left: 20px;
   transition: 0.3s;
+  opacity: 0;
 }
 .link img {
   width: 20px;
+  opacity: 0;
 }
 .hide-el {
   position: absolute;
   top: 0px;
   left: 50px;
+  opacity: 0;
 }
 .hidden-text {
   color: #eee;
+  opacity: 0;
 }
 .hidden-text:hover {
   color: black;
@@ -153,6 +157,7 @@ form #gender {
 }
 
 /* media query */
+
 @media screen and (max-width: 992px) {
   #data-output header h1 {
     font-size: 2rem;
@@ -182,4 +187,16 @@ form #gender {
   .card {
     width: 80%;
   }
+    .link {
+  opacity: 1;
+}
+.link img {
+  opacity: 1;
+}
+.hide-el {
+  opacity: 1;
+}
+.hidden-text {
+  opacity: 1;
+}
 }
